@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Notes Application</h1>
+        <div class="header-container">
+            <form action="">
+                <input type="text" placeholder="Title" id="addTitle" class="title" />
+                <textarea value="description" class="description" placeholder="Description" id="addDescription" rows="4"
+                    cols="50"></textarea>
+                <input type="hidden" id="saveIndex" />
+                <Button id="addBtn" class="add-note-btn"> Add Note</Button>
+                <Button id="editBtn" class="editBtn"> Edit Note</Button>
+                <input type="search" id="noteSearch" class="search-box" name="gsearch" placeholder="search-note">
+            </form>
+        </div>
+    </header>
+
+
+    <section>
+        <div>
+            <h1>Your notes</h1>
+            <div id="notes" class="notes"></div>
+        </div>
+    </section>
+
+    <script src="js/app.js" />
+    </body>
+</html>
